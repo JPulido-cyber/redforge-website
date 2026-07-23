@@ -47,8 +47,12 @@
             href="#home"
             aria-label="Project RedForge home"
         >
-            <span class="brand-mark">
-                RF
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 48 56" role="img">
+                    <path class="brand-shield" d="M24 2 43 12v19c0 11-7.5 18-19 23C12.5 49 5 42 5 31V12L24 2Z" />
+                    <path class="brand-forge" d="M15 17h9l-4 6 4 4-5 12m14-22h-8l4 6-4 4 5 12" />
+                    <path class="brand-spark" d="M24 11v7M20.5 14.5h7" />
+                </svg>
             </span>
 
             <span class="brand-copy">
@@ -97,12 +101,44 @@
             </a>
         </div>
 
-        <a
-            class="resume-button"
-            href="#"
-        >
-            RESUME
-        </a>
+        <div class="nav-actions">
+            <div class="social-links" aria-label="Professional profiles">
+                <a
+                    href="https://github.com/JPulido-cyber"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub profile"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                    </svg>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/jose-pulido-5887723a5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5.35 3.5A2.35 2.35 0 1 1 5.34 8.2a2.35 2.35 0 0 1 .01-4.7ZM3.3 9.75h4.1V21H3.3V9.75Zm6.65 0h3.93v1.54h.06c.55-1.04 1.88-2.13 3.87-2.13 4.14 0 4.9 2.72 4.9 6.27V21h-4.1v-4.94c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.61V21h-4.11V9.75Z" />
+                    </svg>
+                </a>
+
+                <a href="mailto:j.pulido.cyber@outlook.com" aria-label="Email JPulido">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.35l9 5.62 9-5.62V7H3Zm18 10V9.7l-8.47 5.3a1 1 0 0 1-1.06 0L3 9.7V17h18Z" />
+                    </svg>
+                </a>
+            </div>
+
+            <a
+                class="resume-button"
+                href="#"
+            >
+                RESUME
+            </a>
+        </div>
 
     </nav>
 
@@ -120,11 +156,29 @@
 
                 <div class="hero-grid-overlay"></div>
 
+                <div class="forge-atmosphere">
+                    <i class="forge-ember"></i>
+                    <i class="forge-ember"></i>
+                    <i class="forge-ember"></i>
+                    <i class="forge-ember"></i>
+                    <i class="forge-ember"></i>
+                    <i class="forge-ember"></i>
+                    <i class="forge-ember"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                    <i class="forge-ash"></i>
+                </div>
+
                 <div class="world-map">
 
                     <img
                         class="world-map-image"
-                        src="assests/world-map.svg"
+                        src="images/redforge-world-map-v2.png"
                         alt=""
                     >
 
@@ -133,8 +187,6 @@
                     <div class="map-glow map-glow-two"></div>
 
                     <div class="map-glow map-glow-three"></div>
-
-                    <div class="map-particles"></div>
 
                     <span class="network-node node-one"></span>
 
@@ -156,19 +208,64 @@
 
                     <span class="network-node node-ten"></span>
 
-                    <span class="network-line line-one"></span>
+                    <svg
+                        class="network-routes"
+                        viewBox="0 0 1000 520"
+                        preserveAspectRatio="none"
+                        aria-hidden="true"
+                    >
+                        <defs>
+                            <filter id="signal-glow" x="-300%" y="-300%" width="700%" height="700%">
+                                <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+                                <feMerge>
+                                    <feMergeNode in="blur"></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
 
-                    <span class="network-line line-two"></span>
+                        <path id="route-1" d="M307 192 Q358 155 410 205"></path>
+                        <path id="route-2" d="M410 205 Q505 105 598 164"></path>
+                        <path id="route-3" d="M598 164 Q614 150 631 181"></path>
+                        <path id="route-4" d="M410 205 Q420 315 451 386"></path>
+                        <path id="route-5" d="M451 386 Q555 440 652 392"></path>
+                        <path id="route-6" d="M598 164 Q685 128 773 235"></path>
+                        <path id="route-7" d="M652 392 Q700 280 773 235"></path>
+                        <path id="route-8" d="M773 235 Q808 220 841 289"></path>
+                        <path id="route-9" d="M841 289 Q878 205 920 194"></path>
+                        <path id="route-10" d="M841 289 Q905 310 938 389"></path>
 
-                    <span class="network-line line-three"></span>
-
-                    <span class="network-line line-four"></span>
-
-                    <span class="network-line line-five"></span>
-
-                    <span class="network-line line-six"></span>
-
-                    <span class="network-line line-seven"></span>
+                        <circle class="route-signal" r="3.2" filter="url(#signal-glow)">
+                            <animateMotion dur="8.5s" begin="-2.1s" repeatCount="indefinite"><mpath href="#route-1"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="3" filter="url(#signal-glow)">
+                            <animateMotion dur="10.2s" begin="-6.4s" repeatCount="indefinite"><mpath href="#route-2"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="2.8" filter="url(#signal-glow)">
+                            <animateMotion dur="9.4s" begin="-4.8s" repeatCount="indefinite"><mpath href="#route-3"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="3.2" filter="url(#signal-glow)">
+                            <animateMotion dur="11.5s" begin="-8.2s" repeatCount="indefinite"><mpath href="#route-4"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="2.7" filter="url(#signal-glow)">
+                            <animateMotion dur="10.8s" begin="-3.7s" repeatCount="indefinite"><mpath href="#route-5"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="3" filter="url(#signal-glow)">
+                            <animateMotion dur="12.4s" begin="-9.5s" repeatCount="indefinite"><mpath href="#route-6"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="2.7" filter="url(#signal-glow)">
+                            <animateMotion dur="9.8s" begin="-7.1s" repeatCount="indefinite"><mpath href="#route-7"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="2.8" filter="url(#signal-glow)">
+                            <animateMotion dur="8.9s" begin="-5.4s" repeatCount="indefinite"><mpath href="#route-8"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="3" filter="url(#signal-glow)">
+                            <animateMotion dur="10.6s" begin="-2.8s" repeatCount="indefinite"><mpath href="#route-9"></mpath></animateMotion>
+                        </circle>
+                        <circle class="route-signal" r="2.8" filter="url(#signal-glow)">
+                            <animateMotion dur="11.8s" begin="-8.6s" repeatCount="indefinite"><mpath href="#route-10"></mpath></animateMotion>
+                        </circle>
+                    </svg>
 
                 </div>
 
@@ -283,8 +380,12 @@
 
             <div class="metric">
 
-                <span class="metric-icon">
-                    ▤
+                <span class="metric-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="7" rx="1.5"></rect>
+                        <rect x="3" y="14" width="18" height="7" rx="1.5"></rect>
+                        <path d="M7 6.5h.01M7 17.5h.01M11 6.5h7M11 17.5h7"></path>
+                    </svg>
                 </span>
 
                 <div>
@@ -301,8 +402,12 @@
 
             <div class="metric">
 
-                <span class="metric-icon">
-                    ◇
+                <span class="metric-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2.5 20 6v5.2c0 5-3.1 8.2-8 10.3-4.9-2.1-8-5.3-8-10.3V6l8-3.5Z"></path>
+                        <circle cx="12" cy="9" r="2"></circle>
+                        <path d="M8.5 15c.6-1.7 1.8-2.6 3.5-2.6s2.9.9 3.5 2.6"></path>
+                    </svg>
                 </span>
 
                 <div>
@@ -319,8 +424,14 @@
 
             <div class="metric">
 
-                <span class="metric-icon">
-                    ◎
+                <span class="metric-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="9" y="2.5" width="6" height="5" rx="1"></rect>
+                        <rect x="2.5" y="16.5" width="6" height="5" rx="1"></rect>
+                        <rect x="9" y="16.5" width="6" height="5" rx="1"></rect>
+                        <rect x="15.5" y="16.5" width="6" height="5" rx="1"></rect>
+                        <path d="M12 7.5v4.5M5.5 16.5V12h13v4.5M12 12v4.5"></path>
+                    </svg>
                 </span>
 
                 <div>
@@ -337,8 +448,11 @@
 
             <div class="metric">
 
-                <span class="metric-icon">
-                    ▧
+                <span class="metric-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 2.5h9l5 5V21.5H5v-19Z"></path>
+                        <path d="M14 2.5v5h5M8 12h8M8 16h8"></path>
+                    </svg>
                 </span>
 
                 <div>
@@ -355,8 +469,13 @@
 
             <div class="metric">
 
-                <span class="metric-icon">
-                    ◉
+                <span class="metric-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="7" y="2.5" width="10" height="15" rx="1.5"></rect>
+                        <path d="M10 6h4M10 10h4M12 17.5v3M5 20.5h14"></path>
+                        <circle cx="10" cy="14" r=".65"></circle>
+                        <circle cx="14" cy="14" r=".65"></circle>
+                    </svg>
                 </span>
 
                 <div>
