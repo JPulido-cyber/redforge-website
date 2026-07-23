@@ -25,25 +25,130 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="lab-page">
 
     <nav class="navbar">
 
-        <a class="brand" href="../index.html">
-            PROJECT <span>REDFORGE</span>
+        <a class="brand" href="../index.html" aria-label="Project RedForge home">
+            <span class="brand-copy">
+                <small>PROJECT</small>
+                <strong><span class="brand-red">RED</span><span class="brand-forge-word">FORGE</span></strong>
+                <em>BUILD. SECURE. DEFEND.</em>
+            </span>
         </a>
 
         <div class="nav-links">
-            <a href="../index.html#operator">OPERATOR</a>
+            <a href="../index.html">HOME</a>
+            <a href="../operator-profile.html">ABOUT</a>
+            <a class="active" href="enterprise-home-lab.html">LAB ENVIRONMENT</a>
             <a href="../index.html#projects">PROJECTS</a>
-            <a href="../index.html#operations">OPERATIONS</a>
-            <a href="../index.html#journal">JOURNAL</a>
+            <a href="../index.html#operations">DOCUMENTATION</a>
+            <a href="../index.html#journal">BLOG</a>
             <a href="../index.html#contact">CONTACT</a>
         </div>
 
+        <div class="nav-actions">
+            <div class="social-links" aria-label="Professional profiles">
+                <a href="https://github.com/JPulido-cyber" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jose-pulido-5887723a5" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.35 3.5A2.35 2.35 0 1 1 5.34 8.2a2.35 2.35 0 0 1 .01-4.7ZM3.3 9.75h4.1V21H3.3V9.75Zm6.65 0h3.93v1.54h.06c.55-1.04 1.88-2.13 3.87-2.13 4.14 0 4.9 2.72 4.9 6.27V21h-4.1v-4.94c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.61V21h-4.11V9.75Z"></path></svg>
+                </a>
+                <a href="mailto:j.pulido.cyber@outlook.com" aria-label="Email Jose Pulido">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.35l9 5.62 9-5.62V7H3Zm18 10V9.7l-8.47 5.3a1 1 0 0 1-1.06 0L3 9.7V17h18Z"></path></svg>
+                </a>
+            </div>
+            <a class="resume-button" href="#">RESUME</a>
+        </div>
     </nav>
 
     <main class="project-page">
+
+        <section class="lab-console">
+            <header class="lab-console-header">
+                <div>
+                    <p>LAB ENVIRONMENT</p>
+                    <h1>ENTERPRISE HOME LAB</h1>
+                    <span>A self-built enterprise environment for learning, testing, and real-world cybersecurity engineering.</span>
+                </div>
+                <div class="lab-console-controls" aria-label="Environment display settings">
+                    <button id="lab-view-toggle" type="button" aria-pressed="false">⌁ <span>VIEW MODE: TOPOLOGY</span>⌄</button>
+                    <button id="lab-theme-toggle" type="button" aria-pressed="false">◉ <span>THEME: DARK</span>⌄</button>
+                </div>
+            </header>
+
+            <div class="lab-console-grid">
+                <section class="lab-topology" aria-labelledby="topology-title">
+                    <h2 id="topology-title" class="sr-only">Planned lab topology</h2>
+                    <div class="lab-legend">
+                        <span><i class="edge"></i>EDGE</span>
+                        <span><i class="identity"></i>IDENTITY</span>
+                        <span><i class="monitoring"></i>MONITORING</span>
+                        <span><i class="management"></i>MANAGEMENT</span>
+                    </div>
+
+                    <div class="topology-stage">
+                        <div class="topology-lines" aria-hidden="true">
+                            <i class="line trunk"></i>
+                            <i class="line branch branch-a"></i>
+                            <i class="line branch branch-b"></i>
+                            <i class="line branch branch-c"></i>
+                            <i class="line branch branch-d"></i>
+                        </div>
+                        <article class="topology-node topology-internet"><b>◎</b><strong>NETWORK EDGE</strong><small>PLANNED</small></article>
+                        <article class="topology-node topology-core"><b>⌘</b><strong>VIRTUALIZATION CORE</strong><small>PLATFORM EVALUATION</small></article>
+                        <article class="topology-node topology-ad"><b>▦</b><strong>ACTIVE DIRECTORY</strong><small>WINDOWS SERVER</small></article>
+                        <article class="topology-node topology-windows"><b>⊞</b><strong>WINDOWS CLIENT</strong><small>WINDOWS 11</small></article>
+                        <article class="topology-node topology-linux"><b>◉</b><strong>LINUX SYSTEM</strong><small>SERVER SERVICES</small></article>
+                        <article class="topology-node topology-splunk"><b>⌁</b><strong>SPLUNK</strong><small>LOG MONITORING</small></article>
+                    </div>
+
+                    <footer class="lab-purpose-strip">
+                        <div><small>LAB PURPOSE</small><strong>Enterprise infrastructure engineering and cybersecurity practice.</strong></div>
+                        <div><small>PLANNED TECHNOLOGIES</small><strong>Windows Server · Windows 11 · Linux · Splunk</strong></div>
+                        <div><small>BUILT &amp; MAINTAINED BY</small><strong>Jose Pulido</strong></div>
+                        <div><small>STARTED</small><strong>July 2026</strong></div>
+                    </footer>
+                </section>
+
+                <aside class="lab-sidebar">
+                    <section>
+                        <h2>ENVIRONMENT STATUS</h2>
+                        <dl>
+                            <div><dt>PROJECT</dt><dd>IN DEVELOPMENT</dd></div>
+                            <div><dt>CURRENT PHASE</dt><dd>PLANNING</dd></div>
+                            <div><dt>ARCHITECTURE</dt><dd>IN DESIGN</dd></div>
+                            <div><dt>DOCUMENTATION</dt><dd>ACTIVE</dd></div>
+                        </dl>
+                    </section>
+                    <section>
+                        <h2>QUICK ACTIONS</h2>
+                        <nav class="lab-quick-actions" aria-label="Lab documentation shortcuts">
+                            <a href="#topology-title">VIEW ARCHITECTURE</a>
+                            <a href="#lab-technology">TECHNOLOGY STACK</a>
+                            <a href="#lab-roadmap">IMPLEMENTATION PLAN</a>
+                            <a href="#lab-log">ENGINEERING LOG</a>
+                        </nav>
+                    </section>
+                    <section>
+                        <h2>LAB STATUS</h2>
+                        <dl>
+                            <div><dt>NETWORK DESIGN</dt><dd>PLANNED</dd></div>
+                            <div><dt>IDENTITY</dt><dd>PLANNED</dd></div>
+                            <div><dt>MONITORING</dt><dd>PLANNED</dd></div>
+                            <div><dt>AUTOMATION</dt><dd>PLANNED</dd></div>
+                        </dl>
+                    </section>
+                    <section class="lab-mission">
+                        <small>CURRENT MISSION</small>
+                        <strong>Operation Foundation</strong>
+                        <p>Infrastructure before security.<br>Security before scale.</p>
+                        <div aria-hidden="true">◆</div>
+                    </section>
+                </aside>
+            </div>
+        </section>
 
         <header class="project-page-hero">
 
@@ -188,7 +293,7 @@
 
         </section>
 
-        <section class="project-content-section">
+        <section id="lab-architecture" class="project-content-section lab-legacy-architecture">
 
             <div class="project-content-heading">
                 <p class="section-label">ARCHITECTURE</p>
@@ -208,7 +313,7 @@
 
         </section>
 
-        <section class="project-content-section">
+        <section id="lab-technology" class="project-content-section">
 
             <div class="project-content-heading">
                 <p class="section-label">TECHNOLOGY</p>
@@ -251,7 +356,7 @@
 
         </section>
 
-        <section class="project-content-section">
+        <section id="lab-roadmap" class="project-content-section">
 
             <div class="project-content-heading">
                 <p class="section-label">EXECUTION</p>
@@ -341,7 +446,7 @@
 
         </section>
 
-        <section class="project-content-section">
+        <section id="lab-log" class="project-content-section">
 
             <div class="project-content-heading">
                 <p class="section-label">PROJECT JOURNAL</p>
