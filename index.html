@@ -4,449 +4,1072 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Project RedForge is a hands-on cybersecurity engineering portfolio and enterprise home lab."
+    >
 
     <title>Project RedForge</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
-<body>
+<body class="home-page">
 
     <nav class="navbar">
 
-        <a class="brand" href="#">
-            PROJECT <span>REDFORGE</span>
+        <a
+            class="brand"
+            href="#home"
+            aria-label="Project RedForge home"
+        >
+            <span class="brand-mark">
+                RF
+            </span>
+
+            <span class="brand-copy">
+                <small>PROJECT</small>
+
+                <strong>
+                    REDFORGE
+                </strong>
+
+                <em>
+                    BUILD. SECURE. DEFEND.
+                </em>
+            </span>
         </a>
 
         <div class="nav-links">
-            <a href="#operator">OPERATOR</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#operations">OPERATIONS</a>
-            <a href="#journal">JOURNAL</a>
-            <a href="#contact">CONTACT</a>
+            <a
+                class="active"
+                href="#home"
+            >
+                HOME
+            </a>
+
+            <a href="#operator">
+                ABOUT
+            </a>
+
+            <a href="projects/enterprise-home-lab.html">
+                LAB ENVIRONMENT
+            </a>
+
+            <a href="#projects">
+                PROJECTS
+            </a>
+
+            <a href="#operations">
+                DOCUMENTATION
+            </a>
+
+            <a href="#journal">
+                BLOG
+            </a>
+
+            <a href="#contact">
+                CONTACT
+            </a>
         </div>
+
+        <a
+            class="resume-button"
+            href="#"
+        >
+            RESUME
+        </a>
 
     </nav>
 
-    <section class="hero">
+    <main>
 
-        <h3>PROJECT</h3>
+        <section
+            class="hero"
+            id="home"
+        >
 
-        <h1>REDFORGE</h1>
+            <div
+                class="hero-background"
+                aria-hidden="true"
+            >
 
-        <p class="main-mission">
-            Building the skills, systems, and mindset of a cybersecurity engineer.
-        </p>
+                <div class="hero-grid-overlay"></div>
 
-        <p class="sub-mission">
-            Documenting real projects, continuous learning, and professional growth—
-            one build at a time.
-        </p>
+                <div class="world-map">
 
-        <a class="forge-button" href="#operations">
-            ENTER THE FORGE
-        </a>
+                    <img
+                        class="world-map-image"
+                        src="assests/world-map.svg"
+                        alt=""
+                    >
 
-    </section>
+                    <div class="map-glow map-glow-one"></div>
 
-    <section class="operations-section" id="operations">
+                    <div class="map-glow map-glow-two"></div>
 
-        <div class="section-heading">
-            <p class="section-label">CURRENT OPERATION</p>
+                    <div class="map-glow map-glow-three"></div>
 
-            <h2>Operation Foundation</h2>
+                    <span class="network-node node-one"></span>
 
-            <p class="section-description">
-                Establishing the technical foundation for networking, systems administration,
-                automation, and cybersecurity engineering.
-            </p>
-        </div>
+                    <span class="network-node node-two"></span>
 
-        <div class="operation-card">
+                    <span class="network-node node-three"></span>
 
-            <div class="operation-status">
-                <span class="status-dot"></span>
-                <span>ACTIVE</span>
-            </div>
+                    <span class="network-node node-four"></span>
 
-            <div class="operation-grid">
+                    <span class="network-node node-five"></span>
 
-                <div class="operation-item">
-                    <span class="item-label">OBJECTIVE</span>
-                    <strong>Build Core Networking Skills</strong>
-                </div>
+                    <span class="network-node node-six"></span>
 
-                <div class="operation-item">
-                    <span class="item-label">CURRENT FOCUS</span>
-                    <strong>Virtualization and Home Lab Design</strong>
-                </div>
+                    <span class="network-line line-one"></span>
 
-                <div class="operation-item">
-                    <span class="item-label">STARTED</span>
-                    <strong>July 21, 2026</strong>
-                </div>
+                    <span class="network-line line-two"></span>
 
-                <div class="operation-item">
-                    <span class="item-label">STATUS</span>
-                    <strong>In Progress</strong>
+                    <span class="network-line line-three"></span>
+
+                    <span class="network-line line-four"></span>
+
                 </div>
 
             </div>
 
-            <div class="progress-block">
+            <div class="hero-content">
 
-                <div class="progress-header">
-                    <span>MISSION PROGRESS</span>
-                    <span>15%</span>
-                </div>
-
-                <div class="progress-track">
-                    <div class="progress-fill"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="projects-section" id="projects">
-
-        <div class="section-heading">
-            <p class="section-label">ENGINEERING PORTFOLIO</p>
-
-            <h2>Featured Projects</h2>
-
-            <p class="section-description">
-                Hands-on projects built to develop practical skills, document technical
-                decisions, and demonstrate measurable growth.
-            </p>
-        </div>
-
-        <div class="project-grid">
-
-            <article class="project-card">
-
-                <span class="project-number">01</span>
-
-                <div class="project-icon">⌘</div>
-
-                <h3>Enterprise Home Lab</h3>
-
-                <p>
-                    Designing a realistic virtual environment for networking, Windows,
-                    Linux, identity, monitoring, and security testing.
+                <p class="hero-eyebrow">
+                    CYBERSECURITY ENGINEER
                 </p>
 
-                <div class="project-tags">
-                    <span>Networking</span>
-                    <span>Virtualization</span>
-                    <span>Security</span>
-                </div>
+                <h1>
+                    BUILDING &amp; DEFENDING
 
-                <div class="project-footer">
-                    <span class="project-status active">ACTIVE</span>
+                    <span>
+                        AN ENTERPRISE FROM
+                    </span>
 
-                    <a href="projects/enterprise-home-lab.html">
-                        VIEW PROJECT →
+                    <span>
+                        THE GROUND UP
+                    </span>
+                </h1>
+
+                <p class="hero-description">
+                    Project RedForge is a hands-on cybersecurity lab and portfolio
+                    that simulates a real-world enterprise environment. I engineer
+                    the infrastructure, secure it, monitor it, and continuously
+                    evolve it.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        class="primary-button"
+                        href="projects/enterprise-home-lab.html"
+                    >
+                        <span aria-hidden="true">
+                            ⌁
+                        </span>
+
+                        EXPLORE THE LAB
                     </a>
+
+                    <a
+                        class="secondary-button"
+                        href="#projects"
+                    >
+                        VIEW PROJECTS
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+
                 </div>
 
-            </article>
+                <a
+                    class="scroll-indicator"
+                    href="#operations"
+                >
+                    <span class="mouse-icon">
+                        <span></span>
+                    </span>
 
-            <article class="project-card">
+                    SCROLL TO EXPLORE
+                </a>
 
-                <span class="project-number">02</span>
+            </div>
 
-                <div class="project-icon">&lt;/&gt;</div>
+            <aside class="network-status-panel">
 
-                <h3>Python Automation</h3>
+                <div class="status-row">
+                    <span>
+                        NETWORK STATUS
+                    </span>
 
-                <p>
-                    Building practical Python tools while developing programming,
-                    troubleshooting, and automation fundamentals.
-                </p>
+                    <strong class="live-status">
+                        <span></span>
 
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>Automation</span>
-                    <span>Git</span>
+                        LIVE
+                    </strong>
                 </div>
 
-                <div class="project-footer">
-                    <span class="project-status active">ACTIVE</span>
-                    <a href="#">VIEW PROJECT →</a>
+                <div class="status-row">
+                    <span>
+                        DOMAIN CONTROLLERS
+                    </span>
+
+                    <strong>
+                        1
+                    </strong>
                 </div>
 
-            </article>
+                <div class="status-row">
+                    <span>
+                        SYSTEMS ONLINE
+                    </span>
 
-            <article class="project-card">
-
-                <span class="project-number">03</span>
-
-                <div class="project-icon">AD</div>
-
-                <h3>Active Directory Lab</h3>
-
-                <p>
-                    Deploying and securing a Windows domain with users, groups,
-                    policies, authentication, and administrative controls.
-                </p>
-
-                <div class="project-tags">
-                    <span>Windows Server</span>
-                    <span>Identity</span>
-                    <span>GPO</span>
-                </div>
-
-                <div class="project-footer">
-                    <span class="project-status planned">PLANNED</span>
-                    <a href="#">VIEW ROADMAP →</a>
-                </div>
-
-            </article>
-
-            <article class="project-card">
-
-                <span class="project-number">04</span>
-
-                <div class="project-icon">SIEM</div>
-
-                <h3>Splunk Detection Lab</h3>
-
-                <p>
-                    Ingesting security data, building dashboards, investigating events,
-                    and developing detection and threat-hunting workflows.
-                </p>
-
-                <div class="project-tags">
-                    <span>Splunk</span>
-                    <span>SIEM</span>
-                    <span>Detection</span>
-                </div>
-
-                <div class="project-footer">
-                    <span class="project-status planned">PLANNED</span>
-                    <a href="#">VIEW ROADMAP →</a>
-                </div>
-
-            </article>
-
-            <article class="project-card">
-
-                <span class="project-number">05</span>
-
-                <div class="project-icon">AWS</div>
-
-                <h3>AWS Cloud Security</h3>
-
-                <p>
-                    Building and securing cloud infrastructure using identity,
-                    logging, monitoring, networking, and least-privilege principles.
-                </p>
-
-                <div class="project-tags">
-                    <span>AWS</span>
-                    <span>Cloud</span>
-                    <span>IAM</span>
-                </div>
-
-                <div class="project-footer">
-                    <span class="project-status planned">PLANNED</span>
-                    <a href="#">VIEW ROADMAP →</a>
-                </div>
-
-            </article>
-
-            <article class="project-card">
-
-                <span class="project-number">06</span>
-
-                <div class="project-icon">TH</div>
-
-                <h3>Threat Hunting</h3>
-
-                <p>
-                    Developing investigative workflows to identify suspicious activity,
-                    analyze evidence, and document defensible conclusions.
-                </p>
-
-                <div class="project-tags">
-                    <span>Analysis</span>
-                    <span>Telemetry</span>
-                    <span>Defense</span>
-                </div>
-
-                <div class="project-footer">
-                    <span class="project-status planned">PLANNED</span>
-                    <a href="#">VIEW ROADMAP →</a>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-    <section class="operator-section" id="operator">
-
-        <div class="section-heading">
-            <p class="section-label">OPERATOR PROFILE</p>
-
-            <h2>The Engineer Behind RedForge</h2>
-
-            <p class="section-description">
-                Military leadership, technical development, and a disciplined transition
-                into cybersecurity engineering.
-            </p>
-        </div>
-
-        <div class="operator-dashboard">
-
-            <aside class="operator-identity">
-
-                <div class="operator-emblem">
-                    <span class="emblem-project">PROJECT</span>
-                    <strong>RF</strong>
-                    <span class="emblem-name">REDFORGE</span>
-                </div>
-
-                <p class="operator-designation">OPERATOR</p>
-
-                <h3>Jose Pulido</h3>
-
-                <p class="operator-role">
-                    Cybersecurity Engineer
-                </p>
-
-                <div class="operator-active-status">
-                    <span class="status-dot"></span>
-                    <span>ACTIVE</span>
-                </div>
-
-                <div class="identity-divider"></div>
-
-                <div class="identity-detail">
-                    <span>CURRENT MISSION</span>
-                    <strong>Project RedForge</strong>
-                </div>
-
-                <div class="identity-detail">
-                    <span>MOTTO</span>
-                    <strong>Discipline. Precision. Progress.</strong>
-                </div>
-
-                <div class="system-status">
-
-                    <div class="system-status-header">
-                        <span>SYSTEM STATUS</span>
-                        <span>ONLINE</span>
-                    </div>
-
-                    <div class="system-status-track">
-                        <div class="system-status-fill"></div>
-                    </div>
-
+                    <strong class="online-count">
+                        1
+                    </strong>
                 </div>
 
             </aside>
 
-            <div class="operator-dossier">
+        </section>
 
-                <div class="dossier-header">
-                    <span>PERSONNEL DOSSIER</span>
-                    <span>RF-001</span>
-                </div>
+        <section
+            class="hero-metrics"
+            aria-label="RedForge project metrics"
+        >
 
-                <div class="dossier-grid">
+            <div class="metric">
 
-                    <div class="dossier-item">
-                        <span class="item-label">OPERATOR</span>
-                        <strong>Jose Pulido</strong>
-                    </div>
+                <span class="metric-icon">
+                    ▤
+                </span>
 
-                    <div class="dossier-item">
-                        <span class="item-label">STATUS</span>
-                        <strong class="active-text">Active</strong>
-                    </div>
-
-                    <div class="dossier-item">
-                        <span class="item-label">BACKGROUND</span>
-                        <strong>U.S. Army Leadership</strong>
-                    </div>
-
-                    <div class="dossier-item">
-                        <span class="item-label">EXPERIENCE</span>
-                        <strong>13 Years</strong>
-                    </div>
-
-                    <div class="dossier-item">
-                        <span class="item-label">CURRENT OBJECTIVE</span>
-                        <strong>Cybersecurity Engineer</strong>
-                    </div>
-
-                    <div class="dossier-item">
-                        <span class="item-label">EDUCATION</span>
-                        <strong>B.S. Cyber Security</strong>
-                    </div>
-
-                </div>
-
-                <div class="operator-focus">
-
-                    <span class="item-label">CURRENT FOCUS</span>
-
-                    <div class="focus-tags">
-                        <span>Python</span>
-                        <span>Networking</span>
-                        <span>Windows</span>
-                        <span>Linux</span>
-                        <span>Active Directory</span>
-                        <span>Splunk</span>
-                        <span>Cloud Security</span>
-                    </div>
-
-                </div>
-
-                <div class="mission-statement">
-
-                    <span class="item-label">MISSION STATEMENT</span>
+                <div>
+                    <strong>
+                        1
+                    </strong>
 
                     <p>
-                        Project RedForge documents my transition from Army leadership
-                        to cybersecurity engineering. Every lab, automation, technical
-                        write-up, and project on this platform represents deliberate
-                        practice, continuous learning, and measurable progress.
+                        SYSTEM DEPLOYED
                     </p>
+                </div>
+
+            </div>
+
+            <div class="metric">
+
+                <span class="metric-icon">
+                    ◇
+                </span>
+
+                <div>
+                    <strong>
+                        5
+                    </strong>
+
+                    <p>
+                        SECURITY GROUPS
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="metric">
+
+                <span class="metric-icon">
+                    ◎
+                </span>
+
+                <div>
+                    <strong>
+                        1
+                    </strong>
+
+                    <p>
+                        ACTIVE DIRECTORY FOREST
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="metric">
+
+                <span class="metric-icon">
+                    ▧
+                </span>
+
+                <div>
+                    <strong>
+                        2
+                    </strong>
+
+                    <p>
+                        ENGINEERING LOGS
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="metric">
+
+                <span class="metric-icon">
+                    ◉
+                </span>
+
+                <div>
+                    <strong>
+                        24/7
+                    </strong>
+
+                    <p>
+                        BUILDING &amp; DEFENSE
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="operations-section"
+            id="operations"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    CURRENT OPERATION
+                </p>
+
+                <h2>
+                    Operation Foundation
+                </h2>
+
+                <p class="section-description">
+                    Establishing the technical foundation for networking, systems
+                    administration, automation, and cybersecurity engineering.
+                </p>
+
+            </div>
+
+            <div class="operation-card">
+
+                <div class="operation-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        ACTIVE
+                    </span>
+
+                </div>
+
+                <div class="operation-grid">
+
+                    <div class="operation-item">
+
+                        <span class="item-label">
+                            OBJECTIVE
+                        </span>
+
+                        <strong>
+                            Build Core Networking Skills
+                        </strong>
+
+                    </div>
+
+                    <div class="operation-item">
+
+                        <span class="item-label">
+                            CURRENT FOCUS
+                        </span>
+
+                        <strong>
+                            Virtualization and Home Lab Design
+                        </strong>
+
+                    </div>
+
+                    <div class="operation-item">
+
+                        <span class="item-label">
+                            STARTED
+                        </span>
+
+                        <strong>
+                            July 21, 2026
+                        </strong>
+
+                    </div>
+
+                    <div class="operation-item">
+
+                        <span class="item-label">
+                            STATUS
+                        </span>
+
+                        <strong>
+                            In Progress
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="progress-block">
+
+                    <div class="progress-header">
+
+                        <span>
+                            MISSION PROGRESS
+                        </span>
+
+                        <span>
+                            15%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-track">
+                        <div class="progress-fill"></div>
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="redforge-principle">
+        <section
+            class="projects-section"
+            id="projects"
+        >
 
-            <p>REDFORGE PRINCIPLE</p>
+            <div class="section-heading">
 
-            <h3>
-                Discipline forged in service.
-                <span>Engineering forged through practice.</span>
-            </h3>
+                <p class="section-label">
+                    ENGINEERING PORTFOLIO
+                </p>
 
-        </div>
+                <h2>
+                    Featured Projects
+                </h2>
 
-    </section>
+                <p class="section-description">
+                    Hands-on projects built to develop practical skills, document
+                    technical decisions, and demonstrate measurable growth.
+                </p>
+
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <div class="project-icon">
+                        ⌘
+                    </div>
+
+                    <h3>
+                        Enterprise Home Lab
+                    </h3>
+
+                    <p>
+                        Designing a realistic virtual environment for networking,
+                        Windows, Linux, identity, monitoring, and security testing.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>
+                            Networking
+                        </span>
+
+                        <span>
+                            Virtualization
+                        </span>
+
+                        <span>
+                            Security
+                        </span>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span class="project-status active">
+                            ACTIVE
+                        </span>
+
+                        <a href="projects/enterprise-home-lab.html">
+                            VIEW PROJECT →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <div class="project-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        Python Automation
+                    </h3>
+
+                    <p>
+                        Building practical Python tools while developing programming,
+                        troubleshooting, and automation fundamentals.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            Automation
+                        </span>
+
+                        <span>
+                            Git
+                        </span>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span class="project-status active">
+                            ACTIVE
+                        </span>
+
+                        <a href="#">
+                            VIEW PROJECT →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <div class="project-icon">
+                        AD
+                    </div>
+
+                    <h3>
+                        Active Directory Lab
+                    </h3>
+
+                    <p>
+                        Deploying and securing a Windows domain with users, groups,
+                        policies, authentication, and administrative controls.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>
+                            Windows Server
+                        </span>
+
+                        <span>
+                            Identity
+                        </span>
+
+                        <span>
+                            GPO
+                        </span>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span class="project-status planned">
+                            PLANNED
+                        </span>
+
+                        <a href="#">
+                            VIEW ROADMAP →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <div class="project-icon">
+                        SIEM
+                    </div>
+
+                    <h3>
+                        Splunk Detection Lab
+                    </h3>
+
+                    <p>
+                        Ingesting security data, building dashboards, investigating
+                        events, and developing detection and threat-hunting workflows.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>
+                            Splunk
+                        </span>
+
+                        <span>
+                            SIEM
+                        </span>
+
+                        <span>
+                            Detection
+                        </span>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span class="project-status planned">
+                            PLANNED
+                        </span>
+
+                        <a href="#">
+                            VIEW ROADMAP →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        05
+                    </span>
+
+                    <div class="project-icon">
+                        AWS
+                    </div>
+
+                    <h3>
+                        AWS Cloud Security
+                    </h3>
+
+                    <p>
+                        Building and securing cloud infrastructure using identity,
+                        logging, monitoring, networking, and least-privilege principles.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>
+                            AWS
+                        </span>
+
+                        <span>
+                            Cloud
+                        </span>
+
+                        <span>
+                            IAM
+                        </span>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span class="project-status planned">
+                            PLANNED
+                        </span>
+
+                        <a href="#">
+                            VIEW ROADMAP →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        06
+                    </span>
+
+                    <div class="project-icon">
+                        TH
+                    </div>
+
+                    <h3>
+                        Threat Hunting
+                    </h3>
+
+                    <p>
+                        Developing investigative workflows to identify suspicious
+                        activity, analyze evidence, and document defensible conclusions.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>
+                            Analysis
+                        </span>
+
+                        <span>
+                            Telemetry
+                        </span>
+
+                        <span>
+                            Defense
+                        </span>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span class="project-status planned">
+                            PLANNED
+                        </span>
+
+                        <a href="#">
+                            VIEW ROADMAP →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section
+            class="operator-section"
+            id="operator"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    OPERATOR PROFILE
+                </p>
+
+                <h2>
+                    The Engineer Behind RedForge
+                </h2>
+
+                <p class="section-description">
+                    Military leadership, technical development, and a disciplined
+                    transition into cybersecurity engineering.
+                </p>
+
+            </div>
+
+            <div class="operator-dashboard">
+
+                <aside class="operator-identity">
+
+                    <div class="operator-emblem">
+
+                        <span class="emblem-project">
+                            PROJECT
+                        </span>
+
+                        <strong>
+                            RF
+                        </strong>
+
+                        <span class="emblem-name">
+                            REDFORGE
+                        </span>
+
+                    </div>
+
+                    <p class="operator-designation">
+                        OPERATOR
+                    </p>
+
+                    <h3>
+                        Jose Pulido
+                    </h3>
+
+                    <p class="operator-role">
+                        Cybersecurity Engineer
+                    </p>
+
+                    <div class="operator-active-status">
+
+                        <span class="status-dot"></span>
+
+                        <span>
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                    <div class="identity-divider"></div>
+
+                    <div class="identity-detail">
+
+                        <span>
+                            CURRENT MISSION
+                        </span>
+
+                        <strong>
+                            Project RedForge
+                        </strong>
+
+                    </div>
+
+                    <div class="identity-detail">
+
+                        <span>
+                            MOTTO
+                        </span>
+
+                        <strong>
+                            Discipline. Precision. Progress.
+                        </strong>
+
+                    </div>
+
+                    <div class="system-status">
+
+                        <div class="system-status-header">
+
+                            <span>
+                                SYSTEM STATUS
+                            </span>
+
+                            <span>
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <div class="system-status-track">
+                            <div class="system-status-fill"></div>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+                <div class="operator-dossier">
+
+                    <div class="dossier-header">
+
+                        <span>
+                            PERSONNEL DOSSIER
+                        </span>
+
+                        <span>
+                            RF-001
+                        </span>
+
+                    </div>
+
+                    <div class="dossier-grid">
+
+                        <div class="dossier-item">
+
+                            <span class="item-label">
+                                OPERATOR
+                            </span>
+
+                            <strong>
+                                Jose Pulido
+                            </strong>
+
+                        </div>
+
+                        <div class="dossier-item">
+
+                            <span class="item-label">
+                                STATUS
+                            </span>
+
+                            <strong class="active-text">
+                                Active
+                            </strong>
+
+                        </div>
+
+                        <div class="dossier-item">
+
+                            <span class="item-label">
+                                BACKGROUND
+                            </span>
+
+                            <strong>
+                                U.S. Army Leadership
+                            </strong>
+
+                        </div>
+
+                        <div class="dossier-item">
+
+                            <span class="item-label">
+                                EXPERIENCE
+                            </span>
+
+                            <strong>
+                                13 Years
+                            </strong>
+
+                        </div>
+
+                        <div class="dossier-item">
+
+                            <span class="item-label">
+                                CURRENT OBJECTIVE
+                            </span>
+
+                            <strong>
+                                Cybersecurity Engineer
+                            </strong>
+
+                        </div>
+
+                        <div class="dossier-item">
+
+                            <span class="item-label">
+                                EDUCATION
+                            </span>
+
+                            <strong>
+                                B.S. Cyber Security
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="operator-focus">
+
+                        <span class="item-label">
+                            CURRENT FOCUS
+                        </span>
+
+                        <div class="focus-tags">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                Networking
+                            </span>
+
+                            <span>
+                                Windows
+                            </span>
+
+                            <span>
+                                Linux
+                            </span>
+
+                            <span>
+                                Active Directory
+                            </span>
+
+                            <span>
+                                Splunk
+                            </span>
+
+                            <span>
+                                Cloud Security
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mission-statement">
+
+                        <span class="item-label">
+                            MISSION STATEMENT
+                        </span>
+
+                        <p>
+                            Project RedForge documents my transition from Army
+                            leadership to cybersecurity engineering. Every lab,
+                            automation, technical write-up, and project on this
+                            platform represents deliberate practice, continuous
+                            learning, and measurable progress.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="redforge-principle">
+
+                <p>
+                    REDFORGE PRINCIPLE
+                </p>
+
+                <h3>
+                    Discipline forged in service.
+
+                    <span>
+                        Engineering forged through practice.
+                    </span>
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 
